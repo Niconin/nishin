@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Nishinserver</title>
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff"> </head>
+<body>
+  <div style="text-align: center"> <img src="nishinserver.png" alt="nishinserver">
+    <h1>
+      <font color="#008000">ニシンサーバー(日:鰊鯖 英:Nishinserver)へようこそ！</font>
+    </h1>
+    <hr> <img src="event.png" alt="イベント"> <br> <b>
+        <font color="#008000">冬だ！花火だ！寒い夜に花よ咲け！(不定期) 
+          <hr>
+          <img src="event2.png" alt="予定イベント">
+          <br>
+          <font color="#008000">春だ！花火だ！暖かい夜に花よ咲け！(不定期) 
+            <hr>
+            <img src="osirase.png" alt="お知らせ">
+            <br>
+            <font color="#008000">日々進化している鰊鯖※。現在PVP場を集中工事中です。 
+              <br>
+              <font color="#008000">運営者:Niconin0109:管理者 tositou&Azinori0812:建築・コマンド担当</font>
+            </font>
+          </font>
+        </font>
+      </b>
+    <p>※Niconin調べ</p>
+    <hr>
+    <p>↓いまサーバーに参加できるか確認する↓</p> <iframe src="https://mc.erinn.biz/intl/polling.html.php?server_addr=game.mcsvr.online%3A32123" style="width:560px;height:60px;border:none;"></iframe>
+    <h5>現在の時間
+      <h5> <span id="viewTime"></span>
+        <script type="text/javascript">
+          timer = setInterval('clock()',1000); //時刻の更新
+                                      
+                                      function clock() {
+                                      	document.getElementById("viewTime").innerHTML = getNow();
+                                      }
+                                      
+                                      function getNow() {
+                                      	var now = new Date();
+                                      	var year = now.getFullYear();
+                                      	var mon = now.getMonth()+1; //１を足すこと
+                                      	var day = now.getDate();
+                                      	var hour = now.getHours();
+                                      	var min = now.getMinutes();
+                                      	var sec = now.getSeconds();
+                                      	var you = now.getDay(); //曜日
+                                      
+                                      	//曜日の配列（日～土）
+                                      	var youbi = new Array("日","月","火","水","木","金","土");
+                                      	//出力用
+                                      	var s = year + "年" + mon + "月" + day + "日 (" + youbi[you] + ")"+ hour + "時" + min + "分" + sec + "秒" ;
+                                      	return s;
+                                      }
+        </script>
+      </h5>
+    </h5>
+  </div>
+</body>
+</html>
